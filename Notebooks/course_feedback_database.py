@@ -19,13 +19,13 @@ spark = SparkSession.builder.appName( "pandas to spark").getOrCreate()
 # COMMAND ----------
 
 #jdbc properties 
-jdbcHostname = "cepdbtutorialserver.database.windows.net"
-jdbcDatabase = "cepdbtutorial" 
+jdbcHostname = "<server>.database.windows.net"
+jdbcDatabase = "<database>" 
 jdbcPort = 1433
 jdbcUrl = "jdbc:sqlserver://{0}:{1};database={2}".format(jdbcHostname, jdbcPort, jdbcDatabase)
 connectionProperties = {
-  "user" : "myusername",
-  "password" : "mypassword",
+  "user" : "<myusername>",
+  "password" : "<mypassword>",
   "driver" : "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 }
 
